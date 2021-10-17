@@ -1,0 +1,20 @@
+/* p {
+    color: greenyellow;
+    background-color: aliceblue;
+} */
+
+/* h1 {
+    color: greenyellow;
+} */
+
+.green_items  {
+    color: greenyellow;
+}
+
+#my_unique_h1 {
+    text-align: center;
+}
+
+a:hover {
+    color: greenyellow;
+}

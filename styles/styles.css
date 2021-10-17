@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "green_styles.css";
+
+a[title="delfi_anchor"] {
+    color: blueviolet;
+}
+
+.parent > .child {
+    background-color: antiquewhite;
+}
+
+.parent .descendent {
+    background-color: burlywood;
+}
+
+.whatever:hover:not(p) {
+    background-color: aqua;
+}
+
+/* style for different devices */
+@media screen, projection {
+    html { background-color: #fffbca; }
+}
+
+ /* style for printing */
+@media print {
+    html { 
+        background-color: rgb(255, 187, 187); 
+    }
+}
