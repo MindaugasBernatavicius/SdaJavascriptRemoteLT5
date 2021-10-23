@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width: 1000px) {
+            body {
+                background-color: red;
+            }
+
+            p {
+                font-size: 3rem;
+            }
+
+            div {
+                width: 100px;
+                height: 100px;
+                transition: width 2s, height 4s;
+                transition-timing-function: ease-out;
+            }
+
+            div:hover {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                background-color: blue;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: green;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item {
+            width: 33%;
+            background: red;
+            border: 1px solid black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .item1 {
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .item2 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is the paragraph</p>
+    <section class="wrapper">
+        <article class="item">1</article>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </section>
+    <div class="wrapper">
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+    </div>
+    <div class="wrapper">
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+    </div>
+    <div class="wrapper">
+        <div class="item">A</div>
+        <div class="item">A</div>
+        <div class="item">A</div>
+    </div>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <!-- <div class="item4">4</div> -->
+        <!-- <div class="item5">5</div> -->
+        <!-- <div class="item6">6</div> -->
+        <!-- <div class="item7">7</div> -->
+        <!-- <div class="item8">8</div> -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="background-color:red; text-align: center;">ABC</div>
+</body>
+
+</html>
